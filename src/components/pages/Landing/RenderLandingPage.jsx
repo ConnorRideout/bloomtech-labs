@@ -33,15 +33,15 @@ function RenderLandingPage(props) {
 
       {/* Graphs Section: Add code here for the graphs section for your first ticket */}
       <div className="graphs-section">
-        <div>
+        <div className='graph-img-container'>
           <img src={GrantRatesByOfficeImg} alt="Grant Rates By Office" />
           <p>Search Grant Rates By Office</p>
         </div>
-        <div>
+        <div className='graph-img-container'>
           <img src={GrantRatesByNationalityImg} alt="Grant Rates By Nationality" />
           <p>Search Grant Rates By Nationality</p>
         </div>
-        <div>
+        <div className='graph-img-container'>
           <img src={GrantRatesOverTimeImg} alt="Grant Rates Over Time" />
           <p>Search Grant Rates Over Time</p>
         </div>
@@ -54,12 +54,14 @@ function RenderLandingPage(props) {
         >
           View the Data
         </Button>
-        <Button
-          type="default"
-          style={{ backgroundColor: '#404C4A', color: '#FFFFFF' }}
-        >
-          Download the Data
-        </Button>
+        <a href="https://humanrightsfirst.org/wp-content/uploads/2022/10/COW2021001887-I589Data.csv">
+          <Button
+            type="default"
+            style={{ backgroundColor: '#404C4A', color: '#FFFFFF' }}
+          >
+            Download the Data
+          </Button>
+        </a>
       </div>
 
       <div className="middle-section">
@@ -96,12 +98,14 @@ function RenderLandingPage(props) {
               <p>Between fiscal year 2017 and 2020, the New York asylum office’s average grant rate was six times lower than the San Francisco asylum office.</p>
             </span>
           </div>
-          <Button
-            type="default"
-            style={{ backgroundColor: '#404C4A', color: '#FFFFFF' }}
-          >
-            Read More
-          </Button>
+          <a href="https://humanrightsfirst.org/library/uscis-records-reveal-systemic-disparities-in-asylum-decisions/">
+            <Button
+              type="default"
+              style={{ backgroundColor: '#404C4A', color: '#FFFFFF' }}
+            >
+              Read More
+            </Button>
+          </a>
           <p onClick={() => scrollToTop()} className="back-to-top">
             Back To Top ^
           </p>

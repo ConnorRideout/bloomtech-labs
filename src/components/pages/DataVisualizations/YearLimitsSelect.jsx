@@ -77,7 +77,7 @@ function YearLimitsSelect(props) {
 
   useEffect(() => {
     updateStateWithNewData(years, view, office, stateSettingFn);
-  });
+  }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
   return (
     <div
