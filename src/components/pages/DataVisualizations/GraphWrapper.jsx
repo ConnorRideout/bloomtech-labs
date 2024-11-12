@@ -13,7 +13,7 @@ import { resetVisualizationQuery } from '../../../state/actionCreators';
 // import test_data from '../../../data/test_data.json';
 import { colors } from '../../../styles/data_vis_colors';
 import ScrollToTopOnMount from '../../../utils/scrollToTopOnMount';
-import Spinner from './Spinner';
+import Spinner from '../../common/Spinner';
 
 const { background_color } = colors;
 
